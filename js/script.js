@@ -1,24 +1,38 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const cards = document.querySelectorAll(".card");
-
-    cards.forEach((card, index) => {
-        card.style.opacity = "0";
-        card.style.transform = "translateY(20px)";
-        
-        setTimeout(() => {
-            card.style.transition = "all 0.5s ease";
-            card.style.opacity = "1";
-            card.style.transform = "translateY(0)";
-        }, index * 150);
-    });
+window.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".navbar");
+    navbar.classList.toggle("scrolled", window.scrollY > 50);
 });
 
-const emailElement = document.querySelector(".email");
 
-if (emailElement) {
-    emailElement.addEventListener("click", () => {
-        const email = emailElement.textContent;
-        navigator.clipboard.writeText(email);
-        alert("Email copiado!");
+const reveals = document.querySelectorAll(".card");
+
+function revealOnScroll() {
+    const windowHeight = window.innerHeight;
+
+    reveals.forEach(card => {
+        const cardTop = card.getBoundingClientRect().top;
+
+        if (cardTop < windowHeight - 100) {
+            card.style.opacity = "1";
+            card.style.transform = "translateY(0)";
+        }
     });
 }
+
+window.addEventListener("scroll", revealOnScroll);
+
+
+reveals.forEach(card => {
+    card.style.opacity = "0";
+    card.style.transform = "translateY(40px)";
+    card.style.transition = "all 0.6s ease";
+});
+
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href"))
+            .scrollIntoView({ behavior: "smooth" });
+    });
+});
