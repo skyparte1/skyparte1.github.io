@@ -1,52 +1,291 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <title>Luis Fernando | Desenvolvedor Web</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luis Fernando — Dev</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:wght@400;500&family=Instrument+Sans:ital,wght@0,400;0,600;1,400&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="logo">LF</div>
-      <div class="links">
-        <a href="#projetos">Projetos</a>
-        <a href="#contato">Contato</a>
+    <div id="cursor"></div>
+    <div id="cursor-ring"></div>
+
+    <nav id="navbar">
+      <div class="logo">LF<span>.</span></div>
+      <div class="nav-links">
+        <a href="#sobre" class="nav-item">Sobre</a>
+        <a href="#projetos" class="nav-item">Projetos</a>
+        <a href="#servicos" class="nav-item">Serviços</a>
+        <a href="#contato" class="nav-cta">Falar comigo</a>
       </div>
     </nav>
 
     <section class="hero">
-      <h1>Luis Fernando</h1>
-      <h2>Desenvolvedor Web Full Stack</h2>
-      <p>Crio sites e sistemas modernos, rápidos e funcionais.</p>
-      <div class="buttons">
-        <a href="#projetos" class="btn primary">Ver Projetos</a>
-        <a href="#contato" class="btn secondary">Contato</a>
+      <div class="hero-glow"></div>
+      <div class="hero-glow2"></div>
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Disponível para projetos
+        </div>
+        <h1>
+          <span class="line"><span>Luis</span></span>
+          <span class="line"><span>Fernando</span></span>
+          <span class="line"><span class="highlight">Dev.</span></span>
+        </h1>
+        <p class="hero-sub">
+          Transformo ideias em produtos digitais — front-end, back-end e mobile.
+          Do conceito ao deploy.
+        </p>
+        <div class="hero-actions">
+          <a href="#projetos" class="btn btn-primary">Ver projetos ↓</a>
+          <a href="#contato" class="btn btn-ghost">Entrar em contato</a>
+        </div>
+      </div>
+      <div class="hero-stack">
+        <div class="stack-tag">React / Next.js</div>
+        <div class="stack-tag">Node.js / PHP</div>
+        <div class="stack-tag">React Native</div>
+        <div class="stack-tag">MySQL / MongoDB</div>
+        <div class="stack-tag">REST APIs</div>
+        <div class="stack-tag">Docker / Git</div>
+      </div>
+      <div class="hero-scroll">
+        <div class="scroll-line"></div>
+        <span>scroll</span>
       </div>
     </section>
+
+    <div class="divider"></div>
+
+    <section id="sobre">
+      <div class="section-label">Sobre mim</div>
+      <div class="sobre-grid">
+        <div class="sobre-text">
+          <div class="section-title">Código com<br />propósito.</div>
+          <p>
+            Oi! Sou <strong>Luis Fernando</strong>, desenvolvedor full-stack &
+            mobile com foco em criar soluções que realmente funcionam — rápidas,
+            escaláveis e com boa experiência para o usuário.
+          </p>
+          <p>
+            Trabalho do <strong>front ao back</strong>: desde a interface que o
+            usuário vê até a API e o banco de dados que sustentam tudo. Também
+            desenvolvo <strong>apps mobile</strong> com React Native.
+          </p>
+          <p>
+            Cada projeto é uma oportunidade de resolver um problema real. Gosto
+            de entender o negócio antes de escrever a primeira linha de código.
+          </p>
+          <div class="stats-row">
+            <div class="stat">
+              <span class="stat-num" data-target="15">0</span>
+              <span class="stat-label">Projetos entregues</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-target="3">0</span>
+              <span class="stat-label">Anos de xp</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-target="100">0</span>
+              <span class="stat-label">% Dedicação</span>
+            </div>
+          </div>
+        </div>
+        <div class="skills-visual">
+          <div class="skill-item">
+            <div class="skill-icon">🖥️</div>
+            <div class="skill-name">Front-end</div>
+            <div class="skill-desc">React, HTML/CSS, JS</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">⚙️</div>
+            <div class="skill-name">Back-end</div>
+            <div class="skill-desc">Node.js, PHP, APIs</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">📱</div>
+            <div class="skill-name">Mobile</div>
+            <div class="skill-desc">React Native</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">🗄️</div>
+            <div class="skill-name">Banco de Dados</div>
+            <div class="skill-desc">MySQL, MongoDB</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">🚀</div>
+            <div class="skill-name">Deploy</div>
+            <div class="skill-desc">Docker, VPS, Vercel</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon">🔗</div>
+            <div class="skill-name">Versionamento</div>
+            <div class="skill-desc">Git & GitHub</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
 
     <section id="projetos" class="projetos">
-      <h2>Projetos</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Sistema de Login</h3>
-          <p>Login completo com PHP e MySQL.</p>
+      <div class="section-label">Projetos</div>
+      <div class="section-title">O que eu construí.</div>
+      <div class="projetos-grid">
+        <div class="projeto-card">
+          <div class="card-header">
+            <span class="card-num">01</span>
+            <div class="card-links">
+              <a
+                href="https://github.com/skyparte1"
+                target="_blank"
+                class="card-link"
+                >⌥</a
+              >
+              <a href="#" class="card-link">↗</a>
+            </div>
+          </div>
+          <div class="card-title">Sistema de Autenticação</div>
+          <div class="card-desc">
+            Sistema completo de login e cadastro com autenticação segura,
+            controle de sessão e painel de administrador integrado.
+          </div>
+          <div class="card-impact">
+            ✦ Segurança e escalabilidade para múltiplos usuários
+          </div>
+          <div class="card-tags">
+            <span class="tag">PHP</span><span class="tag">MySQL</span
+            ><span class="tag">JWT</span><span class="tag">Bootstrap</span>
+          </div>
         </div>
-        <div class="card">
-          <h3>Landing Page Responsiva</h3>
-          <p>Site moderno feito com HTML, CSS e JS.</p>
+
+        <div class="projeto-card">
+          <div class="card-header">
+            <span class="card-num">02</span>
+            <div class="card-links">
+              <a
+                href="https://github.com/skyparte1"
+                target="_blank"
+                class="card-link"
+                >⌥</a
+              >
+              <a href="#" class="card-link">↗</a>
+            </div>
+          </div>
+          <div class="card-title">Landing Page Responsiva</div>
+          <div class="card-desc">
+            Site moderno e responsivo com animações fluidas, otimizado para
+            conversão e performance em todos os dispositivos.
+          </div>
+          <div class="card-impact">
+            ✦ Design centrado em conversão e experiência do usuário
+          </div>
+          <div class="card-tags">
+            <span class="tag">HTML</span><span class="tag">CSS</span
+            ><span class="tag">JavaScript</span><span class="tag">Figma</span>
+          </div>
+        </div>
+
+        <div class="projeto-card">
+          <div class="card-header">
+            <span class="card-num">03</span>
+            <div class="card-links">
+              <a
+                href="https://github.com/skyparte1"
+                target="_blank"
+                class="card-link"
+                >⌥</a
+              >
+              <a href="#" class="card-link">↗</a>
+            </div>
+          </div>
+          <div class="card-title">Seu Próximo Projeto</div>
+          <div class="card-desc">
+            Tenho espaço na agenda e estou pronto para o seu desafio — seja uma
+            API, um app mobile ou um sistema web completo.
+          </div>
+          <div class="card-impact">
+            ✦ Entrega ágil com comunicação constante
+          </div>
+          <div class="card-tags">
+            <span class="tag">A definir</span><span class="tag">Seu stack</span
+            ><span class="tag">Seu prazo</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="contato" class="contato">
-      <h2>Contato</h2>
-      <p>Email: lfmouts@gmail.com</p>
-      <p>GitHub: github.com/skyparte1</p>
+    <div class="divider"></div>
+
+    <section id="servicos">
+      <div class="section-label">Serviços</div>
+      <div class="section-title">Como posso ajudar.</div>
+      <div class="servicos-grid">
+        <div class="servico-item">
+          <span class="servico-icon">🖥️</span>
+          <div class="servico-title">Desenvolvimento Web</div>
+          <div class="servico-desc">
+            Sites, sistemas e aplicações web completas — desde landing pages de
+            alta conversão até sistemas internos robustos. Front e back
+            integrados.
+          </div>
+        </div>
+        <div class="servico-item">
+          <span class="servico-icon">📱</span>
+          <div class="servico-title">Apps Mobile</div>
+          <div class="servico-desc">
+            Aplicativos iOS e Android com React Native. Uma base de código, dois
+            sistemas operacionais. Mais rápido, mais barato, mesma qualidade.
+          </div>
+        </div>
+        <div class="servico-item">
+          <span class="servico-icon">🔧</span>
+          <div class="servico-title">APIs & Integrações</div>
+          <div class="servico-desc">
+            Construção e integração de APIs RESTful. Conecte seu sistema a
+            pagamentos, ERPs, CRMs e qualquer serviço de terceiros.
+          </div>
+        </div>
+      </div>
     </section>
+
+    <div class="divider"></div>
+
+    <section id="contato" class="contato">
+      <div class="section-label">Contato</div>
+      <div class="contato-big">Vamos construir<br />algo juntos?</div>
+      <p class="contato-sub">
+        Respondo em até 24h. Projetos de qualquer tamanho são bem-vindos.
+      </p>
+      <div class="contato-links">
+        <a href="mailto:lfmouts@gmail.com" class="contato-link">
+          <span>✉</span> lfmouts@gmail.com
+        </a>
+        <a
+          href="https://github.com/skyparte1"
+          target="_blank"
+          class="contato-link"
+        >
+          <span>⌥</span> github.com/skyparte1
+        </a>
+      </div>
+      <a href="mailto:lfmouts@gmail.com" class="email-big"
+        >Me manda uma mensagem →</a
+      >
+    </section>
+
+    <footer>
+      <span class="footer-text"
+        >© 2025 Luis Fernando — Todos os direitos reservados</span
+      >
+      <span class="footer-text">Feito com ☕ e muito JS</span>
+    </footer>
+
     <script src="js/script.js"></script>
   </body>
 </html>
